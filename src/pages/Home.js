@@ -1,16 +1,17 @@
 import React from 'react';
-import AddRecipe from '../components/AddRecipes'; 
+import ListRecipe from '../components/ListRecipes';
 
 function Home() {
-  const handleAddRecipe = (recipe) => {
-    console.log('Recipe added:', recipe);
-    // Aquí puedes agregar la lógica para manejar la nueva receta
-  };
-
   return (
-    <div>
-      <h1>Home Page</h1>
-      <AddRecipe onAdd={handleAddRecipe} />
+    <div style={{
+      backgroundImage: "url('https://www.cocinatis.com/archivos/202207/comidas-de-verano_large_16x9.jpg')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      minHeight: '100vh',
+      padding: '20px',
+      color: '#fff', 
+    }}>
+      <ListRecipe />
     </div>
   );
 }
